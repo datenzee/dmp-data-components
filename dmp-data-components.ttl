@@ -1,0 +1,996 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vo: <http://purl.org/datenzee/view-ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://purl.org/datenzee/dmp-data-components#> .
+@base <http://purl.org/datenzee/dmp-data-components> .
+
+
+# Root --------------------------------------------------
+:Root
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Root_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_2d1f096c75e44055b4ff124bc50dcfd3 ;
+    vo:dataComponentName "Root" .
+
+:Root_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_2d1f096c75e44055b4ff124bc50dcfd3
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_131040725bf54e638b7aed3616435b37 , :Strong_2012e2bd43fa4e5795afbfbf061b8222 , :Content_7a42ee6dc8394c4d87a14e5573bbc27c , :Container_eea9aa589a234ef9a472f1abf0f2375e , :Container_81cdb09a6cb14fae85692347c7f09a9f , :Container_e19937d5368a4661b644fac360d8e650 , :Container_8c1b830504a147349277c2d53a9bd342 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Heading_131040725bf54e638b7aed3616435b37
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_d7c938c1a33f4821b0f9f443c5068ce6 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_d7c938c1a33f4821b0f9f443c5068ce6
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/title> ;
+    vo:order 0 .
+
+:Strong_2012e2bd43fa4e5795afbfbf061b8222
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_a44a18916fe04d1eae5446832505ce61 ;
+    vo:isBlock true ;
+    vo:order 1 .
+
+:Content_a44a18916fe04d1eae5446832505ce61
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_a44a18916fe04d1eae5446832505ce61 ;
+    vo:order 0 .
+
+:TextContent_a44a18916fe04d1eae5446832505ce61
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Data Management Plan" .
+
+:Content_7a42ee6dc8394c4d87a14e5573bbc27c
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/description> ;
+    vo:order 2 .
+
+:Container_eea9aa589a234ef9a472f1abf0f2375e
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_3b74e2c24e144337b415653820232810 , :Content_9213b15a78314553b2b34ccc43b41046 , :DataComponent_830cb055012b47eea65cd81ffdc68eff ;
+    vo:isBlock true ;
+    vo:order 3 .
+
+:Heading_3b74e2c24e144337b415653820232810
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_dab956d009514e0bbc69a47afdc92099 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_dab956d009514e0bbc69a47afdc92099
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_dab956d009514e0bbc69a47afdc92099 ;
+    vo:order 0 .
+
+:TextContent_dab956d009514e0bbc69a47afdc92099
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Contacts" .
+
+:Content_9213b15a78314553b2b34ccc43b41046
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_9213b15a78314553b2b34ccc43b41046 ;
+    vo:order 1 .
+
+:TextContent_9213b15a78314553b2b34ccc43b41046
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "There are the following contacts related to the project of this DMP:" .
+
+:DataComponent_830cb055012b47eea65cd81ffdc68eff
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#Contact> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasContact> ;
+    vo:order 2 .
+
+:Container_81cdb09a6cb14fae85692347c7f09a9f
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_5344f21d50264749ab23273802981e40 , :Content_95e0d89319294ad494b6ab44312e68d8 , :DataComponent_ac3e33ef76624659a7f8454a6a6b18fd ;
+    vo:isBlock true ;
+    vo:order 4 .
+
+:Heading_5344f21d50264749ab23273802981e40
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_11f952326f8c4235b1cdd5d5598b508c ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_11f952326f8c4235b1cdd5d5598b508c
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_11f952326f8c4235b1cdd5d5598b508c ;
+    vo:order 0 .
+
+:TextContent_11f952326f8c4235b1cdd5d5598b508c
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Contributor" .
+
+:Content_95e0d89319294ad494b6ab44312e68d8
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_95e0d89319294ad494b6ab44312e68d8 ;
+    vo:order 1 .
+
+:TextContent_95e0d89319294ad494b6ab44312e68d8
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "There are the following contributors related to the project of this DMP:" .
+
+:DataComponent_ac3e33ef76624659a7f8454a6a6b18fd
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#Contributor> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasContributor> ;
+    vo:order 2 .
+
+:Container_e19937d5368a4661b644fac360d8e650
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_bbca39fe53224d9486646c834d1a1782 , :Content_cb970ee3817f4656a36a14237a58c765 , :DataComponent_eeebae9ee0fc4b32a53d21b13a057259 ;
+    vo:isBlock true ;
+    vo:order 5 .
+
+:Heading_bbca39fe53224d9486646c834d1a1782
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_763ddc7ed45b4c9bbb14d7c399926ce6 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_763ddc7ed45b4c9bbb14d7c399926ce6
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_763ddc7ed45b4c9bbb14d7c399926ce6 ;
+    vo:order 0 .
+
+:TextContent_763ddc7ed45b4c9bbb14d7c399926ce6
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Projects" .
+
+:Content_cb970ee3817f4656a36a14237a58c765
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_cb970ee3817f4656a36a14237a58c765 ;
+    vo:order 1 .
+
+:TextContent_cb970ee3817f4656a36a14237a58c765
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "We will be working on the following project and for those are the data and work described in this DMP." .
+
+:DataComponent_eeebae9ee0fc4b32a53d21b13a057259
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#Project> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasProject> ;
+    vo:order 2 .
+
+:Container_8c1b830504a147349277c2d53a9bd342
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_150b68d5d4b04a4aad6739af41b5017e , :Content_a1ba72308a6149ceb90e383854a8e85a , :DataComponent_414bea604d0e4ad689159e1c1a3a5108 ;
+    vo:isBlock true ;
+    vo:order 6 .
+
+:Heading_150b68d5d4b04a4aad6739af41b5017e
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_f4ae2b7e89f24371ae2273cbff273a21 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_f4ae2b7e89f24371ae2273cbff273a21
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_f4ae2b7e89f24371ae2273cbff273a21 ;
+    vo:order 0 .
+
+:TextContent_f4ae2b7e89f24371ae2273cbff273a21
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Datasets" .
+
+:Content_a1ba72308a6149ceb90e383854a8e85a
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_a1ba72308a6149ceb90e383854a8e85a ;
+    vo:order 1 .
+
+:TextContent_a1ba72308a6149ceb90e383854a8e85a
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "We will reuse or produce the following datasets in the project." .
+
+:DataComponent_414bea604d0e4ad689159e1c1a3a5108
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#Dataset> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasDataset> ;
+    vo:order 2 .
+
+
+# Contact --------------------------------------------------
+:Contact
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Contact_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_ef28e283b5b6444cb5485cea44cb69c9 ;
+    vo:dataComponentName "Contact" .
+
+:Contact_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_ef28e283b5b6444cb5485cea44cb69c9
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_45c3aa95c077442eaa531a127dabb47c , :Strong_8d7c885784f4422eb3e4b9ebd7cde48f , :Content_70da1a75095f427d83e15fab492f7ef5 , :Email_7a191f7ac53c4b69aab039206d0761b4 , :Content_da407200d8274f12afb294ecaacfb3e7 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Strong_45c3aa95c077442eaa531a127dabb47c
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_cb34ff46bfa5497aac0d2ba7cdbba561 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_cb34ff46bfa5497aac0d2ba7cdbba561
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_cb34ff46bfa5497aac0d2ba7cdbba561 ;
+    vo:order 0 .
+
+:TextContent_cb34ff46bfa5497aac0d2ba7cdbba561
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "• " .
+
+:Strong_8d7c885784f4422eb3e4b9ebd7cde48f
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_34a0766e4a8047afa59b0f97bde1273d ;
+    vo:isBlock false ;
+    vo:order 1 .
+
+:Content_34a0766e4a8047afa59b0f97bde1273d
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://xmlns.com/foaf/0.1/name> ;
+    vo:order 0 .
+
+:Content_70da1a75095f427d83e15fab492f7ef5
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_70da1a75095f427d83e15fab492f7ef5 ;
+    vo:order 2 .
+
+:TextContent_70da1a75095f427d83e15fab492f7ef5
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue " (" .
+
+:Email_7a191f7ac53c4b69aab039206d0761b4
+    rdf:type owl:NamedIndividual , vo:Email ;
+    vo:contentPredicate <http://xmlns.com/foaf/0.1/mbox> ;
+    vo:order 3 .
+
+:Content_da407200d8274f12afb294ecaacfb3e7
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_da407200d8274f12afb294ecaacfb3e7 ;
+    vo:order 4 .
+
+:TextContent_da407200d8274f12afb294ecaacfb3e7
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue ")" .
+
+
+# Contributor --------------------------------------------------
+:Contributor
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Contributor_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_83d3f1d17a7e4f509ce615bc2774cee5 ;
+    vo:dataComponentName "Contributor" .
+
+:Contributor_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_83d3f1d17a7e4f509ce615bc2774cee5
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_b369bbac7a7d4ccfa1157df0e5215ea7 , :Strong_eecd56e5eea94d9da5640eb62ecc4c42 , :Content_98491d0069124eeb9297cd502e7e1864 , :Email_e4f226d9b08049e79662ffe984ce6b99 , :Content_fe7f73db521b49f08b451a410c3dc4b3 , :Emphasis_cdeeec122ab546ff9789517e5a181aca ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Strong_b369bbac7a7d4ccfa1157df0e5215ea7
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_ea3e6e206d2f40a6818fa0b613efc7ea ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_ea3e6e206d2f40a6818fa0b613efc7ea
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_ea3e6e206d2f40a6818fa0b613efc7ea ;
+    vo:order 0 .
+
+:TextContent_ea3e6e206d2f40a6818fa0b613efc7ea
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "• " .
+
+:Strong_eecd56e5eea94d9da5640eb62ecc4c42
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_ffd1e785b88a4a62a6c8eea7639d04b3 ;
+    vo:isBlock false ;
+    vo:order 1 .
+
+:Content_ffd1e785b88a4a62a6c8eea7639d04b3
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://xmlns.com/foaf/0.1/name> ;
+    vo:order 0 .
+
+:Content_98491d0069124eeb9297cd502e7e1864
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_98491d0069124eeb9297cd502e7e1864 ;
+    vo:order 2 .
+
+:TextContent_98491d0069124eeb9297cd502e7e1864
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue " (" .
+
+:Email_e4f226d9b08049e79662ffe984ce6b99
+    rdf:type owl:NamedIndividual , vo:Email ;
+    vo:contentPredicate <http://xmlns.com/foaf/0.1/mbox> ;
+    vo:order 3 .
+
+:Content_fe7f73db521b49f08b451a410c3dc4b3
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_fe7f73db521b49f08b451a410c3dc4b3 ;
+    vo:order 4 .
+
+:TextContent_fe7f73db521b49f08b451a410c3dc4b3
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "), Role: " .
+
+:Emphasis_cdeeec122ab546ff9789517e5a181aca
+    rdf:type owl:NamedIndividual , vo:Emphasis ;
+    vo:contains :Content_6b8cab3c07644a749446b494e4d12d7b ;
+    vo:isBlock false ;
+    vo:order 5 .
+
+:Content_6b8cab3c07644a749446b494e4d12d7b
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#role> ;
+    vo:order 0 .
+
+
+# Project --------------------------------------------------
+:Project
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Project_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_d25d05efb83545afb8cba248cd6641ca ;
+    vo:dataComponentName "Project" .
+
+:Project_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_d25d05efb83545afb8cba248cd6641ca
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_1300e3ef099d4c6eb1ea2e4e2eb39d28 , :Content_625e299f26e64dfabb575c4899bd45a8 , :Container_f53602251c3049d0addc4c5f01e9873c , :Container_983fda3f00bf4f2fa90ccb39e8844189 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Heading_1300e3ef099d4c6eb1ea2e4e2eb39d28
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_0014cf9f6e71429fa41ab1998d28f572 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_0014cf9f6e71429fa41ab1998d28f572
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/title> ;
+    vo:order 0 .
+
+:Content_625e299f26e64dfabb575c4899bd45a8
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/description> ;
+    vo:order 1 .
+
+:Container_f53602251c3049d0addc4c5f01e9873c
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_d6b7943f39e74cbba8ab545b8c4ca3fc , :Date_bd8934776a594bffbab88523e0a4e07c ;
+    vo:isBlock true ;
+    vo:order 2 .
+
+:Strong_d6b7943f39e74cbba8ab545b8c4ca3fc
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_9372b4a12e9e47b69aaa91c9da6ece38 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_9372b4a12e9e47b69aaa91c9da6ece38
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_9372b4a12e9e47b69aaa91c9da6ece38 ;
+    vo:order 0 .
+
+:TextContent_9372b4a12e9e47b69aaa91c9da6ece38
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Start date: " .
+
+:Date_bd8934776a594bffbab88523e0a4e07c
+    rdf:type owl:NamedIndividual , vo:Date ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#start> ;
+    vo:order 1 .
+
+:Container_983fda3f00bf4f2fa90ccb39e8844189
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_ffa14e5918654318aa66dd9bb25230ea , :Date_5ec6ab60aa72441189b974b7d3c8d2c9 ;
+    vo:isBlock true ;
+    vo:order 3 .
+
+:Strong_ffa14e5918654318aa66dd9bb25230ea
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_c0c778605cc443c8bb17d36d36466677 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_c0c778605cc443c8bb17d36d36466677
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_c0c778605cc443c8bb17d36d36466677 ;
+    vo:order 0 .
+
+:TextContent_c0c778605cc443c8bb17d36d36466677
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "End date: " .
+
+:Date_5ec6ab60aa72441189b974b7d3c8d2c9
+    rdf:type owl:NamedIndividual , vo:Date ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#end> ;
+    vo:order 1 .
+
+
+# Dataset --------------------------------------------------
+:Dataset
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Dataset_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_c96b0f783b5243938ae4bd0aea4315e0 ;
+    vo:dataComponentName "Dataset" .
+
+:Dataset_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_c96b0f783b5243938ae4bd0aea4315e0
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_21611d8183df4d7780be83ad39275339 , :Content_60e5a94bc7b34819b00024876fe0b5df , :Container_a4673a0c430f451e829ec49831164624 , :Container_4d3d470d6eb5465c8d7c32e9cbe700a9 , :Container_4afdf25c6a034cc789fbaa2407d2364e , :Condition_1a4d81c212cc47d4a96f499a0a11529b , :Condition_f4aaa97c9acc441ab489fc928e0961f0 , :Container_fc4bd849b3aa4ad5b3e7e716852a9c9c , :Container_d99297ca526f470ba1741b63be2b79a7 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Heading_21611d8183df4d7780be83ad39275339
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_b9137cf67b69410c902a0a6432df44c5 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_b9137cf67b69410c902a0a6432df44c5
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/title> ;
+    vo:order 0 .
+
+:Content_60e5a94bc7b34819b00024876fe0b5df
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/description> ;
+    vo:order 1 .
+
+:Container_a4673a0c430f451e829ec49831164624
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_b90843dd8bff44a7903a34e8520ac750 , :Content_ac627b27aaf846f289a4f167b95b5337 ;
+    vo:isBlock true ;
+    vo:order 2 .
+
+:Strong_b90843dd8bff44a7903a34e8520ac750
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_7a37d97c7b1247299b0e2065b276be97 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_7a37d97c7b1247299b0e2065b276be97
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_7a37d97c7b1247299b0e2065b276be97 ;
+    vo:order 0 .
+
+:TextContent_7a37d97c7b1247299b0e2065b276be97
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Keywords: " .
+
+:Content_ac627b27aaf846f289a4f167b95b5337
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://www.w3.org/ns/dcat#keyword> ;
+    vo:order 1 .
+
+:Container_4d3d470d6eb5465c8d7c32e9cbe700a9
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_74b4557f61744f8a994679ebf56ca07b , :Date_9fb802599d6c4f258ff7845cf74f6b00 ;
+    vo:isBlock true ;
+    vo:order 3 .
+
+:Strong_74b4557f61744f8a994679ebf56ca07b
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_5b0a10ff7cd94dbaaec4fc699e5e7e11 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_5b0a10ff7cd94dbaaec4fc699e5e7e11
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_5b0a10ff7cd94dbaaec4fc699e5e7e11 ;
+    vo:order 0 .
+
+:TextContent_5b0a10ff7cd94dbaaec4fc699e5e7e11
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Issued: " .
+
+:Date_9fb802599d6c4f258ff7845cf74f6b00
+    rdf:type owl:NamedIndividual , vo:Date ;
+    vo:contentPredicate <http://purl.org/dc/terms/issued> ;
+    vo:order 1 .
+
+:Container_4afdf25c6a034cc789fbaa2407d2364e
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_2adb8505efe246999ad8189bcffdf85c , :Content_15f43856582c4adb91bff9fb66c35361 ;
+    vo:isBlock true ;
+    vo:order 4 .
+
+:Strong_2adb8505efe246999ad8189bcffdf85c
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_fcd5d987b389439386592f528871b01b ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_fcd5d987b389439386592f528871b01b
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_fcd5d987b389439386592f528871b01b ;
+    vo:order 0 .
+
+:TextContent_fcd5d987b389439386592f528871b01b
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Dataset Type: " .
+
+:Content_15f43856582c4adb91bff9fb66c35361
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#datasetType> ;
+    vo:order 1 .
+
+:Condition_1a4d81c212cc47d4a96f499a0a11529b
+    rdf:type owl:NamedIndividual , vo:Condition ;
+    vo:conditionContainsNegative :Condition_a58216c8ae944690944da0053f0c902d ;
+    vo:conditionContainsPositive :Container_19bf8099729642f7a866a45be49cdca6 ;
+    vo:conditionPredicate <https://w3id.org/dcso/ns/core#personalData> ;
+    vo:conditionValue "yes" ;
+    vo:isBlock false ;
+    vo:order 5 .
+
+:Container_19bf8099729642f7a866a45be49cdca6
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_ee9958fdca0741db934535839772053e ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_ee9958fdca0741db934535839772053e
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_ee9958fdca0741db934535839772053e ;
+    vo:order 0 .
+
+:TextContent_ee9958fdca0741db934535839772053e
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "The dataset contains personal data." .
+
+:Condition_a58216c8ae944690944da0053f0c902d
+    rdf:type owl:NamedIndividual , vo:Condition ;
+    vo:conditionContainsNegative :Container_b5b9a55a6cff48f2bf75d6f17eaef759 ;
+    vo:conditionContainsPositive :Container_8a9b8a4459ff440684dd71e116809e57 ;
+    vo:conditionPredicate <https://w3id.org/dcso/ns/core#personalData> ;
+    vo:conditionValue "no" ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Container_8a9b8a4459ff440684dd71e116809e57
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_c6bded33dedc4951bf2bcd14f53cdfcc ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_c6bded33dedc4951bf2bcd14f53cdfcc
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_c6bded33dedc4951bf2bcd14f53cdfcc ;
+    vo:order 0 .
+
+:TextContent_c6bded33dedc4951bf2bcd14f53cdfcc
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "The dataset contains no personal data." .
+
+:Container_b5b9a55a6cff48f2bf75d6f17eaef759
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_4756b3580b8b494d8bde114929197f4c ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_4756b3580b8b494d8bde114929197f4c
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_4756b3580b8b494d8bde114929197f4c ;
+    vo:order 0 .
+
+:TextContent_4756b3580b8b494d8bde114929197f4c
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "It is unclear if the dataset contains personal data." .
+
+:Condition_f4aaa97c9acc441ab489fc928e0961f0
+    rdf:type owl:NamedIndividual , vo:Condition ;
+    vo:conditionContainsNegative :Condition_ccf3d71d2a964163bf78e25ba93a3817 ;
+    vo:conditionContainsPositive :Container_fa6510ef16284343bd891c58b7ad1f20 ;
+    vo:conditionPredicate <https://w3id.org/dcso/ns/core#sensitiveData> ;
+    vo:conditionValue "yes" ;
+    vo:isBlock false ;
+    vo:order 6 .
+
+:Container_fa6510ef16284343bd891c58b7ad1f20
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_91f1f08fefab4d09b1f48c80d1b090c0 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_91f1f08fefab4d09b1f48c80d1b090c0
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_91f1f08fefab4d09b1f48c80d1b090c0 ;
+    vo:order 0 .
+
+:TextContent_91f1f08fefab4d09b1f48c80d1b090c0
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "The dataset contains sensitive data." .
+
+:Condition_ccf3d71d2a964163bf78e25ba93a3817
+    rdf:type owl:NamedIndividual , vo:Condition ;
+    vo:conditionContainsNegative :Container_b3ee93378cab4437896a722cbc239b28 ;
+    vo:conditionContainsPositive :Container_8eba13da7bdf4f919ea4db52196fec54 ;
+    vo:conditionPredicate <https://w3id.org/dcso/ns/core#sensitiveData> ;
+    vo:conditionValue "no" ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Container_8eba13da7bdf4f919ea4db52196fec54
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_f919c258e02b40a784e520118f4b07b5 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_f919c258e02b40a784e520118f4b07b5
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_f919c258e02b40a784e520118f4b07b5 ;
+    vo:order 0 .
+
+:TextContent_f919c258e02b40a784e520118f4b07b5
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "The dataset contains no sensitive data." .
+
+:Container_b3ee93378cab4437896a722cbc239b28
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_c6f7ea9473d2489f9ba9645eca97356c ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_c6f7ea9473d2489f9ba9645eca97356c
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_c6f7ea9473d2489f9ba9645eca97356c ;
+    vo:order 0 .
+
+:TextContent_c6f7ea9473d2489f9ba9645eca97356c
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "It is unknown if the dataset contains sensitive data." .
+
+:Container_fc4bd849b3aa4ad5b3e7e716852a9c9c
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_645749efa1c7469da6d7fc58eebc1241 ;
+    vo:isBlock true ;
+    vo:order 7 .
+
+:Content_645749efa1c7469da6d7fc58eebc1241
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#preservationStatement> ;
+    vo:order 0 .
+
+:Container_d99297ca526f470ba1741b63be2b79a7
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_7aa83e9f495449a3ac18590aae9832d9 , :Container_875fe0429e9c4f389a44bef28c524b35 , :DataComponent_8be7ac40b04941b2978eb6b31523b820 ;
+    vo:isBlock true ;
+    vo:order 8 .
+
+:Heading_7aa83e9f495449a3ac18590aae9832d9
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_b71373a2065647b1bf54e8523e7eb62e ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_b71373a2065647b1bf54e8523e7eb62e
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_b71373a2065647b1bf54e8523e7eb62e ;
+    vo:order 0 .
+
+:TextContent_b71373a2065647b1bf54e8523e7eb62e
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Distributions" .
+
+:Container_875fe0429e9c4f389a44bef28c524b35
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_3ab59846143543fd829137307ed857ad ;
+    vo:isBlock true ;
+    vo:order 1 .
+
+:Content_3ab59846143543fd829137307ed857ad
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_3ab59846143543fd829137307ed857ad ;
+    vo:order 0 .
+
+:TextContent_3ab59846143543fd829137307ed857ad
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "This dataset will be available in the following distributions." .
+
+:DataComponent_8be7ac40b04941b2978eb6b31523b820
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#Distribution> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasDistribution> ;
+    vo:order 2 .
+
+
+# Distribution --------------------------------------------------
+:Distribution
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :Distribution_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_54edc3d3100840a29553f63c3e24bb1a ;
+    vo:dataComponentName "Distribution" .
+
+:Distribution_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_54edc3d3100840a29553f63c3e24bb1a
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Heading_1c650821dbd245eb854046e0cb7bc38f , :Container_f425ad2ae4194bdfb9900e2a3c183ac2 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Heading_1c650821dbd245eb854046e0cb7bc38f
+    rdf:type owl:NamedIndividual , vo:Heading ;
+    vo:contains :Content_02348a6ee70f40908adbd436307ba360 ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_02348a6ee70f40908adbd436307ba360
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/title> ;
+    vo:order 0 .
+
+:Container_f425ad2ae4194bdfb9900e2a3c183ac2
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_cc8ab42c377a43deaf5d081645d20b73 , :Container_c14c0084a8eb4f8aa4fcf87f449e0586 , :Container_707a904048df413682fc001bf564b02a , :Container_008ff9dfe1a14e3b9d9961ae2db3a376 , :Container_80bbeee0ace1467dbe9cb47b8f015b13 , :Container_de4ce79f01fa489285f500abca77da47 , :Container_4d281b89d2894a68a95bc3ea37de7cf3 , :DataComponent_3bad75b807de47758aa10723c7376654 ;
+    vo:isBlock true ;
+    vo:order 1 .
+
+:Content_cc8ab42c377a43deaf5d081645d20b73
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/description> ;
+    vo:order 0 .
+
+:Container_c14c0084a8eb4f8aa4fcf87f449e0586
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_f3e5c189565a4cb7b529969c9a4642cf , :Content_cd7da1cfb89d4aa2a1d78fd9a8ee17eb ;
+    vo:isBlock true ;
+    vo:order 1 .
+
+:Strong_f3e5c189565a4cb7b529969c9a4642cf
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_d3198379dcfc4e34b6dbfb11f9ab8219 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_d3198379dcfc4e34b6dbfb11f9ab8219
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_d3198379dcfc4e34b6dbfb11f9ab8219 ;
+    vo:order 0 .
+
+:TextContent_d3198379dcfc4e34b6dbfb11f9ab8219
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Format: " .
+
+:Content_cd7da1cfb89d4aa2a1d78fd9a8ee17eb
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://purl.org/dc/terms/format> ;
+    vo:order 1 .
+
+:Container_707a904048df413682fc001bf564b02a
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_797546e5e3d74d42b83e1497116a4134 , :Content_99eaa0796bde4cac825c76d04ea12942 ;
+    vo:isBlock true ;
+    vo:order 2 .
+
+:Strong_797546e5e3d74d42b83e1497116a4134
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_7fae5073994b4b38813ad43588df4cd8 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_7fae5073994b4b38813ad43588df4cd8
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_7fae5073994b4b38813ad43588df4cd8 ;
+    vo:order 0 .
+
+:TextContent_7fae5073994b4b38813ad43588df4cd8
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Byte Size: " .
+
+:Content_99eaa0796bde4cac825c76d04ea12942
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <http://www.w3.org/ns/dcat#byteSize> ;
+    vo:order 1 .
+
+:Container_008ff9dfe1a14e3b9d9961ae2db3a376
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_e6ca4d01f3b34d01bcc134daa904ee6e , :URL_638e96963e3f4039a3445cd20d2f12d0 ;
+    vo:isBlock true ;
+    vo:order 3 .
+
+:Strong_e6ca4d01f3b34d01bcc134daa904ee6e
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_daf7b8f83bf842aab7d75d64eefbfd93 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_daf7b8f83bf842aab7d75d64eefbfd93
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_daf7b8f83bf842aab7d75d64eefbfd93 ;
+    vo:order 0 .
+
+:TextContent_daf7b8f83bf842aab7d75d64eefbfd93
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Access URL: " .
+
+:URL_638e96963e3f4039a3445cd20d2f12d0
+    rdf:type owl:NamedIndividual , vo:URL ;
+    vo:contentPredicate <http://www.w3.org/ns/dcat#accessURL> ;
+    vo:order 1 .
+
+:Container_80bbeee0ace1467dbe9cb47b8f015b13
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_77669e2e87744f9bbc8142b0b4c6dcf5 , :URL_2c561bbd97b74ea99ba38bfb17275fb2 ;
+    vo:isBlock true ;
+    vo:order 4 .
+
+:Strong_77669e2e87744f9bbc8142b0b4c6dcf5
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_d5578791229b4639b74cf62c21c505ed ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_d5578791229b4639b74cf62c21c505ed
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_d5578791229b4639b74cf62c21c505ed ;
+    vo:order 0 .
+
+:TextContent_d5578791229b4639b74cf62c21c505ed
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Download URL: " .
+
+:URL_2c561bbd97b74ea99ba38bfb17275fb2
+    rdf:type owl:NamedIndividual , vo:URL ;
+    vo:contentPredicate <http://www.w3.org/ns/dcat#downloadURL> ;
+    vo:order 1 .
+
+:Container_de4ce79f01fa489285f500abca77da47
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_8a137db512ad4b0283a6f81e83cda5c5 , :Date_d9bd657df775410c949a8387291fb501 ;
+    vo:isBlock true ;
+    vo:order 5 .
+
+:Strong_8a137db512ad4b0283a6f81e83cda5c5
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_0ed11fac5e18452db71ff7aa897b0842 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_0ed11fac5e18452db71ff7aa897b0842
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_0ed11fac5e18452db71ff7aa897b0842 ;
+    vo:order 0 .
+
+:TextContent_0ed11fac5e18452db71ff7aa897b0842
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Available Until: " .
+
+:Date_d9bd657df775410c949a8387291fb501
+    rdf:type owl:NamedIndividual , vo:Date ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#availableUntil> ;
+    vo:order 1 .
+
+:Container_4d281b89d2894a68a95bc3ea37de7cf3
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Strong_f5c143068d0949fbb6d75aa0db6ea6be , :Content_787c8ee3dd3c4b858a20c98cd6776c96 ;
+    vo:isBlock true ;
+    vo:order 6 .
+
+:Strong_f5c143068d0949fbb6d75aa0db6ea6be
+    rdf:type owl:NamedIndividual , vo:Strong ;
+    vo:contains :Content_089a1731db2f44679042657f30ea6001 ;
+    vo:isBlock false ;
+    vo:order 0 .
+
+:Content_089a1731db2f44679042657f30ea6001
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_089a1731db2f44679042657f30ea6001 ;
+    vo:order 0 .
+
+:TextContent_089a1731db2f44679042657f30ea6001
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "Data Access: " .
+
+:Content_787c8ee3dd3c4b858a20c98cd6776c96
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#dataAccess> ;
+    vo:order 1 .
+
+:DataComponent_3bad75b807de47758aa10723c7376654
+    rdf:type owl:NamedIndividual , vo:DataComponentWrapper ;
+    vo:dataComponent <http://purl.org/datenzee/dmp-data-components#License> ;
+    vo:dataComponentPredicate <https://w3id.org/dcso/ns/core#hasLicense> ;
+    vo:order 7 .
+
+
+# License --------------------------------------------------
+:License
+    dct:created "2023-02-24T10:25:46Z" ;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    foaf:maker :License_Maker ;
+    rdf:type owl:NamedIndividual , vo:DataComponent , rdfs:Resource ;
+    vo:dataComponentContent :Container_0da865e925654e68b4d19128a22ceae1 ;
+    vo:dataComponentName "License" .
+
+:License_Maker
+    foaf:mbox "vknaisl@gmail.com" ;
+    foaf:name "Vojtěch Knaisl" .
+
+:Container_0da865e925654e68b4d19128a22ceae1
+    rdf:type owl:NamedIndividual , vo:Container ;
+    vo:contains :Content_679b413e33704dceb9c233b0ceb502e6 , :Date_eb0f4905a6714e6096304d64abcdfc4e , :Content_3fb7aebe70e140eca4cad97159ad8698 , :URL_a5d7ecc30ecb42bb91d601f44f64f27e , :Content_bc5b8b9c2ad14876bb6cb1b15d1a10df ;
+    vo:isBlock true ;
+    vo:order 0 .
+
+:Content_679b413e33704dceb9c233b0ceb502e6
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_679b413e33704dceb9c233b0ceb502e6 ;
+    vo:order 0 .
+
+:TextContent_679b413e33704dceb9c233b0ceb502e6
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "From " .
+
+:Date_eb0f4905a6714e6096304d64abcdfc4e
+    rdf:type owl:NamedIndividual , vo:Date ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#startDate> ;
+    vo:order 1 .
+
+:Content_3fb7aebe70e140eca4cad97159ad8698
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_3fb7aebe70e140eca4cad97159ad8698 ;
+    vo:order 2 .
+
+:TextContent_3fb7aebe70e140eca4cad97159ad8698
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue ", this distribution uses the following license: " .
+
+:URL_a5d7ecc30ecb42bb91d601f44f64f27e
+    rdf:type owl:NamedIndividual , vo:URL ;
+    vo:contentPredicate <https://w3id.org/dcso/ns/core#licenseRef> ;
+    vo:order 3 .
+
+:Content_bc5b8b9c2ad14876bb6cb1b15d1a10df
+    rdf:type owl:NamedIndividual , vo:Content ;
+    vo:contentContent :TextContent_bc5b8b9c2ad14876bb6cb1b15d1a10df ;
+    vo:order 4 .
+
+:TextContent_bc5b8b9c2ad14876bb6cb1b15d1a10df
+    rdf:type owl:NamedIndividual , vo:TextContent ;
+    vo:textContentValue "." .
+
